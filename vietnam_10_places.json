@@ -1,0 +1,477 @@
+{
+  "dataset_name": "Vietnam Travel Destinations for RAG",
+  "language": "vi",
+  "created_at": "2026-06-14",
+  "description": "Dataset mẫu gồm 10 địa điểm du lịch tại Việt Nam, thiết kế cho chatbot/RAG gợi ý điểm đến và lập lịch trình. Dữ liệu mang tính tham khảo, không thay thế thông tin real-time về giá vé, giờ mở cửa, thời tiết, tình trạng phòng hoặc lịch sự kiện.",
+  "schema_note": "Mỗi document có metadata, thông tin du lịch có cấu trúc, rag_text dạng văn bản dài để embedding, và tags để lọc/ngữ nghĩa.",
+  "documents": [
+    {
+      "id": "vn_travel_001",
+      "name": "Vịnh Hạ Long",
+      "province_city": "Quảng Ninh",
+      "region": "Miền Bắc",
+      "destination_type": ["biển đảo", "di sản thiên nhiên", "nghỉ dưỡng", "tham quan"],
+      "short_description": "Vịnh Hạ Long nổi tiếng với mặt nước xanh, hàng nghìn đảo đá vôi, hang động và các tour du thuyền qua đêm.",
+      "overview": "Vịnh Hạ Long là một trong những biểu tượng du lịch nổi bật nhất của Việt Nam. Điểm hấp dẫn chính là cảnh quan núi đá vôi nhô lên từ mặt biển, các hang động lớn, bãi tắm, làng chài và trải nghiệm đi du thuyền. Nơi này phù hợp với du khách thích ngắm cảnh, nghỉ dưỡng nhẹ nhàng, chụp ảnh và trải nghiệm thiên nhiên trên biển.",
+      "highlights": [
+        "Đi du thuyền ngắm đảo đá vôi và hoàng hôn trên vịnh",
+        "Tham quan hang động như hang Sửng Sốt, động Thiên Cung hoặc hang Đầu Gỗ",
+        "Chèo kayak ở khu vực nước lặng",
+        "Tắm biển hoặc nghỉ dưỡng tại khu vực Bãi Cháy, Tuần Châu",
+        "Kết hợp tham quan Cát Bà hoặc vịnh Lan Hạ nếu có nhiều thời gian"
+      ],
+      "suitable_for": ["cặp đôi", "gia đình", "nhóm bạn", "du khách lần đầu đến miền Bắc"],
+      "suggested_duration_days": "2-3 ngày",
+      "best_time_to_visit": "Tháng 10 đến tháng 4 thường dễ chịu hơn; mùa hè hợp tắm biển nhưng có thể mưa bão, cần kiểm tra thời tiết trước khi đặt tour.",
+      "estimated_budget_vnd_per_person": {
+        "budget": "2.500.000 - 4.000.000",
+        "mid_range": "4.000.000 - 7.000.000",
+        "note": "Chi phí phụ thuộc mạnh vào loại du thuyền, khách sạn và điểm xuất phát. Giá chỉ là ước lượng tham khảo."
+      },
+      "transportation": "Từ Hà Nội có thể đi xe limousine, xe khách hoặc ô tô riêng đến Hạ Long. Nếu đi tour du thuyền, thường xuất phát từ cảng Tuần Châu hoặc cảng du lịch tại Hạ Long.",
+      "food_suggestions": ["chả mực Hạ Long", "sam biển", "hải sản nướng", "bún bề bề"],
+      "sample_itinerary": [
+        {
+          "day": 1,
+          "plan": "Di chuyển đến Hạ Long, nhận phòng hoặc lên du thuyền, tham quan hang động, chèo kayak, ngắm hoàng hôn trên vịnh."
+        },
+        {
+          "day": 2,
+          "plan": "Dậy sớm ngắm bình minh, ăn sáng trên tàu, tham quan thêm đảo hoặc bãi tắm, quay về bờ, ăn hải sản và trở về Hà Nội hoặc ở thêm một đêm."
+        }
+      ],
+      "travel_tips": [
+        "Nên đặt du thuyền qua đơn vị uy tín và kiểm tra kỹ lịch trình bao gồm những điểm nào.",
+        "Nếu dễ say sóng, nên chuẩn bị thuốc chống say và chọn lịch trình ngắn hơn.",
+        "Mùa mưa bão có thể làm tour bị hoãn hoặc đổi lịch."
+      ],
+      "rag_text": "Vịnh Hạ Long ở Quảng Ninh là điểm đến biển đảo và di sản thiên nhiên nổi tiếng của miền Bắc Việt Nam. Nơi này phù hợp với người muốn nghỉ dưỡng, ngắm cảnh, chụp ảnh và trải nghiệm du thuyền. Trải nghiệm nổi bật gồm đi thuyền qua các đảo đá vôi, tham quan hang động, chèo kayak, tắm biển và ăn hải sản. Lịch trình phổ biến là 2 ngày 1 đêm hoặc 3 ngày 2 đêm. Nếu người dùng muốn đi gần Hà Nội, thích cảnh biển đẹp, ngân sách trung bình và muốn chuyến đi nhẹ nhàng, Vịnh Hạ Long là lựa chọn phù hợp. Cần kiểm tra thời tiết trước khi đi vì tour biển có thể bị ảnh hưởng bởi mưa bão.",
+      "tags": ["ha long", "vịnh hạ long", "quảng ninh", "biển", "du thuyền", "hang động", "gia đình", "nghỉ dưỡng"],
+      "source_urls": ["https://vietnam.travel/places-to-go/northern-vietnam/ha-long", "https://vietnamtourism.gov.vn/en/post/16441"]
+    },
+    {
+      "id": "vn_travel_002",
+      "name": "Sa Pa",
+      "province_city": "Lào Cai",
+      "region": "Miền Bắc",
+      "destination_type": ["núi", "trekking", "văn hóa bản địa", "nghỉ dưỡng"],
+      "short_description": "Sa Pa nổi bật với ruộng bậc thang, khí hậu mát, bản làng dân tộc và các cung trekking qua thung lũng.",
+      "overview": "Sa Pa là điểm đến miền núi phù hợp với người thích không khí mát, cảnh ruộng bậc thang, đi bộ đường dài, homestay và tìm hiểu văn hóa địa phương. Ngoài trung tâm thị trấn, du khách thường ghé các bản như Cát Cát, Tả Van, Lao Chải, Tả Phìn hoặc chinh phục Fansipan bằng cáp treo.",
+      "highlights": [
+        "Trekking qua ruộng bậc thang và thung lũng Mường Hoa",
+        "Tham quan bản Cát Cát, Tả Van, Lao Chải, Tả Phìn",
+        "Đi cáp treo lên Fansipan nếu thời tiết tốt",
+        "Ở homestay hoặc lodge view núi",
+        "Thưởng thức món vùng cao như cá hồi, cá tầm, thắng cố, đồ nướng"
+      ],
+      "suitable_for": ["người thích trekking", "nhóm bạn", "cặp đôi", "người thích khí hậu lạnh"],
+      "suggested_duration_days": "3-4 ngày",
+      "best_time_to_visit": "Tháng 9-11 thường đẹp vì thời tiết mát và có mùa lúa; tháng 3-5 hợp ngắm cảnh xuân. Mùa đông có thể rất lạnh và nhiều sương mù.",
+      "estimated_budget_vnd_per_person": {
+        "budget": "2.000.000 - 3.500.000",
+        "mid_range": "3.500.000 - 6.000.000",
+        "note": "Chi phí phụ thuộc vào vé tàu/xe, loại homestay/khách sạn, tour trekking và cáp treo Fansipan."
+      },
+      "transportation": "Từ Hà Nội có thể đi tàu đêm đến Lào Cai rồi đi xe lên Sa Pa, hoặc đi xe giường nằm/limousine thẳng đến thị trấn Sa Pa.",
+      "food_suggestions": ["cá hồi Sa Pa", "cá tầm", "đồ nướng", "lợn cắp nách", "cơm lam"],
+      "sample_itinerary": [
+        {
+          "day": 1,
+          "plan": "Di chuyển từ Hà Nội đến Sa Pa, nhận phòng, dạo trung tâm, nhà thờ đá, quảng trường và ăn đồ nướng buổi tối."
+        },
+        {
+          "day": 2,
+          "plan": "Trekking Lao Chải - Tả Van hoặc tham quan bản Cát Cát, chụp ảnh ruộng bậc thang và ở homestay."
+        },
+        {
+          "day": 3,
+          "plan": "Đi Fansipan nếu thời tiết thuận lợi, mua đặc sản, quay về Hà Nội."
+        }
+      ],
+      "travel_tips": [
+        "Nên mang giày dễ đi vì nhiều đoạn dốc, trơn hoặc đường đất.",
+        "Thời tiết Sa Pa thay đổi nhanh, nên chuẩn bị áo ấm và áo mưa mỏng.",
+        "Nếu trekking sâu vào bản, nên đi cùng hướng dẫn viên địa phương."
+      ],
+      "rag_text": "Sa Pa ở Lào Cai là điểm đến miền núi nổi tiếng của Việt Nam, phù hợp cho người thích trekking, khí hậu mát lạnh, ruộng bậc thang và văn hóa dân tộc. Các trải nghiệm đáng chú ý gồm đi bộ qua thung lũng Mường Hoa, tham quan bản Cát Cát, Tả Van, Lao Chải, Tả Phìn, ở homestay hoặc lodge giữa núi và đi cáp treo Fansipan. Sa Pa hợp với chuyến đi 3 đến 4 ngày từ Hà Nội. Nếu người dùng muốn đi nơi có không khí lạnh, cảnh núi, ảnh đẹp và hoạt động ngoài trời, Sa Pa là gợi ý tốt. Cần lưu ý sương mù, mưa và đường trơn khi trekking.",
+      "tags": ["sapa", "sa pa", "lào cai", "núi", "trekking", "ruộng bậc thang", "fansipan", "homestay"],
+      "source_urls": ["https://vietnam.travel/places-to-go/northern-vietnam/sapa"]
+    },
+    {
+      "id": "vn_travel_003",
+      "name": "Ninh Bình",
+      "province_city": "Ninh Bình",
+      "region": "Miền Bắc",
+      "destination_type": ["thiên nhiên", "di sản", "sông nước", "văn hóa"],
+      "short_description": "Ninh Bình được ví như 'Hạ Long trên cạn' với núi đá vôi, sông nước, hang động và các điểm tâm linh nổi bật.",
+      "overview": "Ninh Bình phù hợp cho chuyến đi ngắn từ Hà Nội, nổi bật với cảnh quan núi đá vôi, thuyền chèo qua hang nước, đồng lúa, đền chùa và các điểm leo núi ngắm toàn cảnh. Các điểm phổ biến gồm Tràng An, Tam Cốc - Bích Động, Hang Múa, chùa Bái Đính, cố đô Hoa Lư và vườn quốc gia Cúc Phương.",
+      "highlights": [
+        "Đi thuyền Tràng An hoặc Tam Cốc ngắm núi đá vôi và hang nước",
+        "Leo Hang Múa để ngắm toàn cảnh sông núi",
+        "Tham quan chùa Bái Đính và cố đô Hoa Lư",
+        "Đạp xe qua làng quê, đồng lúa và homestay gần Tam Cốc",
+        "Khám phá vườn quốc gia Cúc Phương nếu thích thiên nhiên"
+      ],
+      "suitable_for": ["người đi từ Hà Nội", "gia đình", "nhóm bạn", "người thích chụp ảnh", "người thích lịch trình nhẹ"],
+      "suggested_duration_days": "2-3 ngày",
+      "best_time_to_visit": "Tháng 1-4 hợp đi lễ hội và thời tiết dễ chịu; tháng 5-6 có mùa lúa đẹp ở Tam Cốc nhưng trời có thể nóng.",
+      "estimated_budget_vnd_per_person": {
+        "budget": "1.500.000 - 2.500.000",
+        "mid_range": "2.500.000 - 4.500.000",
+        "note": "Chi phí phụ thuộc vào phương tiện từ Hà Nội, homestay/khách sạn và số điểm tham quan."
+      },
+      "transportation": "Từ Hà Nội có thể đi xe khách, limousine, tàu hỏa hoặc xe máy. Tại Ninh Bình có thể thuê xe máy hoặc xe đạp để di chuyển giữa các điểm gần Tam Cốc - Tràng An.",
+      "food_suggestions": ["cơm cháy", "thịt dê núi", "miến lươn", "ốc núi"],
+      "sample_itinerary": [
+        {
+          "day": 1,
+          "plan": "Từ Hà Nội đi Ninh Bình, tham quan Tràng An, chiều leo Hang Múa, tối nghỉ tại homestay Tam Cốc."
+        },
+        {
+          "day": 2,
+          "plan": "Tham quan Tam Cốc - Bích Động hoặc chùa Bái Đính, ăn đặc sản dê núi và trở về Hà Nội."
+        }
+      ],
+      "travel_tips": [
+        "Nên đi thuyền buổi sáng sớm hoặc chiều để tránh nắng.",
+        "Hang Múa có nhiều bậc thang, nên mang giày thoải mái.",
+        "Nếu đi mùa lễ hội, các điểm tâm linh có thể đông."
+      ],
+      "rag_text": "Ninh Bình là điểm du lịch miền Bắc phù hợp cho chuyến 2 đến 3 ngày từ Hà Nội. Điểm mạnh của Ninh Bình là cảnh sông nước, núi đá vôi, hang động và không gian làng quê. Các trải nghiệm nổi bật gồm đi thuyền Tràng An hoặc Tam Cốc, leo Hang Múa ngắm toàn cảnh, tham quan chùa Bái Đính, cố đô Hoa Lư và ăn đặc sản dê núi, cơm cháy. Nếu người dùng muốn đi gần Hà Nội, ngân sách vừa phải, thích chụp ảnh thiên nhiên và lịch trình không quá mệt, Ninh Bình là lựa chọn rất phù hợp.",
+      "tags": ["ninh bình", "tràng an", "tam cốc", "hang múa", "hạ long trên cạn", "gần hà nội", "chụp ảnh"],
+      "source_urls": ["https://vietnam.travel/places-to-go/northern-vietnam/ninh-binh"]
+    },
+    {
+      "id": "vn_travel_004",
+      "name": "Hà Giang",
+      "province_city": "Hà Giang",
+      "region": "Miền Bắc",
+      "destination_type": ["núi", "road trip", "phiêu lưu", "văn hóa bản địa"],
+      "short_description": "Hà Giang nổi tiếng với cung đường đèo hùng vĩ, cao nguyên đá Đồng Văn, đèo Mã Pì Lèng và các bản làng vùng cao.",
+      "overview": "Hà Giang là điểm đến dành cho người thích cảnh núi hùng vĩ, đi đường dài, khám phá văn hóa dân tộc và chụp ảnh phong cảnh. Cung Hà Giang loop thường đi qua Quản Bạ, Yên Minh, Đồng Văn, Mã Pì Lèng, Mèo Vạc và sông Nho Quế. Đây là điểm rất đẹp nhưng cần chuẩn bị kỹ vì đường đèo nhiều khúc cua, thời tiết thay đổi và di chuyển khá mệt.",
+      "highlights": [
+        "Đi cung Hà Giang loop qua Quản Bạ, Yên Minh, Đồng Văn, Mèo Vạc",
+        "Ngắm đèo Mã Pì Lèng và sông Nho Quế",
+        "Tham quan phố cổ Đồng Văn và chợ phiên vùng cao",
+        "Ghé cột cờ Lũng Cú, dinh thự họ Vương, cao nguyên đá Đồng Văn",
+        "Chụp ảnh mùa hoa tam giác mạch nếu đi đúng mùa"
+      ],
+      "suitable_for": ["nhóm bạn", "người thích phượt", "người thích núi", "người có sức khỏe tốt"],
+      "suggested_duration_days": "4-5 ngày",
+      "best_time_to_visit": "Tháng 9-11 thường đẹp với cảnh lúa và hoa tam giác mạch; tháng 3-5 thời tiết dễ chịu hơn. Mùa mưa cần cẩn thận sạt lở và đường trơn.",
+      "estimated_budget_vnd_per_person": {
+        "budget": "2.500.000 - 4.000.000",
+        "mid_range": "4.000.000 - 6.500.000",
+        "note": "Chi phí phụ thuộc vào xe từ Hà Nội, thuê xe máy hoặc tour có tài xế, homestay và số ngày đi loop."
+      },
+      "transportation": "Từ Hà Nội thường đi xe giường nằm hoặc limousine đến thành phố Hà Giang, sau đó thuê xe máy, đi tour easy-rider hoặc thuê ô tô để chạy cung đường vòng.",
+      "food_suggestions": ["cháo ấu tẩu", "thắng dền", "bánh cuốn trứng", "lẩu gà đen", "mèn mén"],
+      "sample_itinerary": [
+        {
+          "day": 1,
+          "plan": "Di chuyển từ Hà Nội đến thành phố Hà Giang, nhận xe hoặc nghỉ ngơi chuẩn bị cho cung loop."
+        },
+        {
+          "day": 2,
+          "plan": "Đi Hà Giang - Quản Bạ - Yên Minh - Đồng Văn, ghé cổng trời Quản Bạ và các điểm ngắm cảnh."
+        },
+        {
+          "day": 3,
+          "plan": "Tham quan Lũng Cú, Đồng Văn, đèo Mã Pì Lèng, sông Nho Quế và nghỉ tại Mèo Vạc."
+        },
+        {
+          "day": 4,
+          "plan": "Từ Mèo Vạc quay lại thành phố Hà Giang, trả xe và về Hà Nội."
+        }
+      ],
+      "travel_tips": [
+        "Nếu chưa quen chạy xe máy đường đèo, nên chọn easy-rider hoặc ô tô có tài xế.",
+        "Mang áo ấm, áo mưa, thuốc cá nhân và giấy tờ tùy thân.",
+        "Không nên chạy xe ban đêm trên đường đèo."
+      ],
+      "rag_text": "Hà Giang là điểm đến miền núi phía Bắc dành cho người thích road trip, cảnh đèo núi hùng vĩ và trải nghiệm văn hóa vùng cao. Cung Hà Giang loop thường mất 4 đến 5 ngày, đi qua Quản Bạ, Yên Minh, Đồng Văn, Mã Pì Lèng, Mèo Vạc, sông Nho Quế và cột cờ Lũng Cú. Nơi này phù hợp với nhóm bạn, người thích phiêu lưu, thích chụp ảnh núi non và có sức khỏe tốt. Nếu người dùng hỏi nơi đi đẹp, hoang sơ, nhiều cung đường đèo và không ngại di chuyển xa, Hà Giang là gợi ý mạnh. Cần lưu ý an toàn giao thông, thời tiết và không chạy xe đèo khi thiếu kinh nghiệm.",
+      "tags": ["hà giang", "ha giang loop", "mã pì lèng", "sông nho quế", "đồng văn", "phượt", "road trip", "núi"],
+      "source_urls": ["https://vietnam.travel/places-to-go/northern-vietnam/ha-giang"]
+    },
+    {
+      "id": "vn_travel_005",
+      "name": "Huế",
+      "province_city": "Thừa Thiên Huế",
+      "region": "Miền Trung",
+      "destination_type": ["di sản", "văn hóa", "ẩm thực", "lịch sử"],
+      "short_description": "Huế là cố đô nổi tiếng với Đại Nội, lăng tẩm, chùa Thiên Mụ, sông Hương và ẩm thực cung đình - dân gian đặc sắc.",
+      "overview": "Huế phù hợp với du khách thích lịch sử, kiến trúc cổ, không gian trầm lắng và ẩm thực địa phương. Các điểm nổi bật gồm Đại Nội Huế, lăng Minh Mạng, lăng Tự Đức, lăng Khải Định, chùa Thiên Mụ, sông Hương và các khu phố ẩm thực. Huế cũng có thể kết hợp với Đà Nẵng và Hội An trong một lịch trình miền Trung.",
+      "highlights": [
+        "Tham quan Đại Nội và các công trình cung đình triều Nguyễn",
+        "Ghé lăng Minh Mạng, lăng Tự Đức, lăng Khải Định",
+        "Đi chùa Thiên Mụ và dạo ven sông Hương",
+        "Thưởng thức bún bò Huế, cơm hến, bánh bèo, bánh nậm, chè Huế",
+        "Kết hợp đi đèo Hải Vân, Đà Nẵng hoặc Hội An"
+      ],
+      "suitable_for": ["người thích lịch sử", "gia đình", "người thích ẩm thực", "du khách thích lịch trình nhẹ"],
+      "suggested_duration_days": "2-3 ngày",
+      "best_time_to_visit": "Tháng 2-4 thường dễ chịu; mùa mưa miền Trung có thể mưa nhiều, cần kiểm tra thời tiết trước khi đi.",
+      "estimated_budget_vnd_per_person": {
+        "budget": "1.800.000 - 3.000.000",
+        "mid_range": "3.000.000 - 5.000.000",
+        "note": "Chi phí phụ thuộc vào vé máy bay/tàu, khách sạn và vé tham quan di tích."
+      },
+      "transportation": "Có thể đến Huế bằng máy bay qua sân bay Phú Bài, tàu hỏa Bắc - Nam, xe khách hoặc đi ô tô từ Đà Nẵng qua đèo Hải Vân.",
+      "food_suggestions": ["bún bò Huế", "cơm hến", "bánh bèo", "bánh nậm", "bánh lọc", "chè Huế"],
+      "sample_itinerary": [
+        {
+          "day": 1,
+          "plan": "Tham quan Đại Nội, chùa Thiên Mụ, dạo sông Hương và ăn các món đặc sản buổi tối."
+        },
+        {
+          "day": 2,
+          "plan": "Tham quan các lăng tẩm như Minh Mạng, Tự Đức, Khải Định, ghé làng hương hoặc quán cafe view cổ kính."
+        },
+        {
+          "day": 3,
+          "plan": "Đi chợ Đông Ba, mua quà, sau đó di chuyển tiếp đến Đà Nẵng/Hội An hoặc quay về."
+        }
+      ],
+      "travel_tips": [
+        "Nên chuẩn bị trang phục lịch sự khi vào di tích, chùa chiền.",
+        "Huế có nhiều điểm lịch sử, nên chia lịch trình vừa phải để không bị mệt.",
+        "Ẩm thực Huế đa dạng, nên thử nhiều món nhỏ thay vì chỉ ăn một bữa lớn."
+      ],
+      "rag_text": "Huế là cố đô của Việt Nam, phù hợp với người thích lịch sử, văn hóa, kiến trúc cổ và ẩm thực. Điểm tham quan chính gồm Đại Nội Huế, các lăng tẩm triều Nguyễn, chùa Thiên Mụ, sông Hương, chợ Đông Ba và các quán ăn địa phương. Huế hợp với chuyến đi 2 đến 3 ngày hoặc kết hợp cùng Đà Nẵng và Hội An trong hành trình miền Trung. Nếu người dùng muốn đi nơi yên bình, nhiều di tích, đồ ăn ngon và không quá ồn ào, Huế là điểm đến phù hợp. Cần lưu ý thời tiết mùa mưa miền Trung.",
+      "tags": ["huế", "cố đô", "đại nội", "lăng tẩm", "sông hương", "ẩm thực huế", "lịch sử", "di sản"],
+      "source_urls": ["https://vietnam.travel/places-to-go/central-vietnam/hue"]
+    },
+    {
+      "id": "vn_travel_006",
+      "name": "Hội An",
+      "province_city": "Đà Nẵng",
+      "region": "Miền Trung",
+      "destination_type": ["phố cổ", "văn hóa", "ẩm thực", "chụp ảnh"],
+      "short_description": "Hội An nổi bật với phố cổ, đèn lồng, kiến trúc giao thương xưa, ẩm thực địa phương và trải nghiệm đi bộ, đạp xe.",
+      "overview": "Hội An là điểm đến phù hợp cho du khách thích không gian cổ kính, đi bộ chậm, chụp ảnh, ăn uống và trải nghiệm văn hóa. Khu phố cổ có nhiều nhà cổ, hội quán, chùa Cầu, quán cà phê, tiệm may và các con phố đèn lồng. Ngoài phố cổ, du khách có thể đạp xe ra Trà Quế, Cẩm Thanh hoặc đi biển An Bàng.",
+      "highlights": [
+        "Dạo phố cổ Hội An buổi chiều và tối khi đèn lồng sáng",
+        "Tham quan chùa Cầu, nhà cổ, hội quán và bảo tàng nhỏ trong phố cổ",
+        "Đạp xe ở làng rau Trà Quế hoặc rừng dừa Cẩm Thanh",
+        "Ăn cao lầu, mì Quảng, bánh mì Hội An, hoành thánh, bánh bao bánh vạc",
+        "Đi biển An Bàng hoặc kết hợp tham quan Đà Nẵng"
+      ],
+      "suitable_for": ["cặp đôi", "nhóm bạn", "người thích chụp ảnh", "người thích ẩm thực", "du khách đi miền Trung"],
+      "suggested_duration_days": "2-3 ngày",
+      "best_time_to_visit": "Tháng 3-5 thường đẹp; từ tháng 10-1 có thể mưa, bão hoặc ngập cục bộ nên cần kiểm tra thời tiết.",
+      "estimated_budget_vnd_per_person": {
+        "budget": "1.800.000 - 3.500.000",
+        "mid_range": "3.500.000 - 6.000.000",
+        "note": "Chi phí phụ thuộc vào việc ở Hội An hay Đà Nẵng, ăn uống, trải nghiệm tour và phương tiện di chuyển."
+      },
+      "transportation": "Hội An cách sân bay Đà Nẵng khoảng dưới 1 giờ đi ô tô tùy điều kiện giao thông. Có thể đi taxi, xe đưa đón, xe buýt hoặc thuê xe máy từ Đà Nẵng.",
+      "food_suggestions": ["cao lầu", "mì Quảng", "bánh mì Hội An", "bánh bao bánh vạc", "hoành thánh"],
+      "sample_itinerary": [
+        {
+          "day": 1,
+          "plan": "Từ Đà Nẵng đến Hội An, nhận phòng, dạo phố cổ, tham quan chùa Cầu, ăn cao lầu và chụp ảnh đèn lồng buổi tối."
+        },
+        {
+          "day": 2,
+          "plan": "Đạp xe đi Trà Quế hoặc Cẩm Thanh, chiều đi biển An Bàng, tối quay lại phố cổ ăn uống và mua quà."
+        }
+      ],
+      "travel_tips": [
+        "Nên đi bộ trong phố cổ vì đường nhỏ và đông du khách vào buổi tối.",
+        "Nếu muốn chụp ảnh đẹp, nên đi sáng sớm hoặc chiều muộn.",
+        "Mùa mưa cần kiểm tra tình trạng ngập và thời tiết trước chuyến đi."
+      ],
+      "rag_text": "Hội An là điểm đến phố cổ ở miền Trung, nổi bật với đèn lồng, kiến trúc cổ, ẩm thực và nhịp sống chậm. Đây là nơi phù hợp với người thích chụp ảnh, ăn uống, đi bộ, đạp xe và trải nghiệm văn hóa. Các hoạt động phổ biến gồm dạo phố cổ, tham quan chùa Cầu, nhà cổ, hội quán, ăn cao lầu, mì Quảng, bánh mì, đạp xe đến Trà Quế, Cẩm Thanh hoặc đi biển An Bàng. Hội An hợp với lịch trình 2 đến 3 ngày và thường kết hợp với Đà Nẵng hoặc Huế. Nếu người dùng thích không gian lãng mạn, cổ kính và nhiều món ăn địa phương, Hội An là gợi ý rất tốt.",
+      "tags": ["hội an", "hoi an", "phố cổ", "đèn lồng", "cao lầu", "chụp ảnh", "ẩm thực", "đà nẵng"],
+      "source_urls": ["https://vietnam.travel/places-to-go/central-vietnam/hoi-an"]
+    },
+    {
+      "id": "vn_travel_007",
+      "name": "Đà Nẵng",
+      "province_city": "Đà Nẵng",
+      "region": "Miền Trung",
+      "destination_type": ["biển", "thành phố", "ẩm thực", "gia đình", "nghỉ dưỡng"],
+      "short_description": "Đà Nẵng là thành phố biển năng động, dễ đi, nhiều điểm tham quan như biển Mỹ Khê, Sơn Trà, Ngũ Hành Sơn, Bà Nà Hills và gần Hội An - Huế.",
+      "overview": "Đà Nẵng phù hợp với nhiều nhóm khách vì có biển, đồ ăn ngon, hạ tầng du lịch tốt và dễ kết hợp tham quan các điểm lân cận. Du khách có thể tắm biển Mỹ Khê, đi bán đảo Sơn Trà, chùa Linh Ứng, Ngũ Hành Sơn, cầu Rồng, Bà Nà Hills, hoặc dành một ngày đi Hội An. Thành phố này hợp với người mới đi du lịch tự túc vì di chuyển tương đối thuận tiện.",
+      "highlights": [
+        "Tắm biển Mỹ Khê và dạo ven biển buổi sáng hoặc chiều",
+        "Tham quan bán đảo Sơn Trà, chùa Linh Ứng, ngắm thành phố từ trên cao",
+        "Ghé Ngũ Hành Sơn và các làng nghề đá gần đó",
+        "Đi Bà Nà Hills nếu thích khu vui chơi, cáp treo và Cầu Vàng",
+        "Ăn mì Quảng, bún chả cá, bánh tráng cuốn thịt heo, hải sản"
+      ],
+      "suitable_for": ["gia đình", "nhóm bạn", "người mới đi du lịch tự túc", "người thích biển", "người muốn kết hợp Hội An - Huế"],
+      "suggested_duration_days": "3-4 ngày",
+      "best_time_to_visit": "Tháng 3-8 thường thuận lợi cho du lịch biển; mùa mưa bão miền Trung cần kiểm tra dự báo thời tiết.",
+      "estimated_budget_vnd_per_person": {
+        "budget": "2.500.000 - 4.000.000",
+        "mid_range": "4.000.000 - 7.000.000",
+        "note": "Chi phí phụ thuộc vào vé máy bay, khách sạn ven biển, Bà Nà Hills và việc kết hợp Hội An/Huế."
+      },
+      "transportation": "Có sân bay quốc tế Đà Nẵng gần trung tâm. Trong thành phố có thể đi taxi, xe công nghệ, thuê xe máy hoặc thuê ô tô theo ngày để đi xa hơn.",
+      "food_suggestions": ["mì Quảng", "bún chả cá", "bánh tráng cuốn thịt heo", "hải sản", "chè sầu"],
+      "sample_itinerary": [
+        {
+          "day": 1,
+          "plan": "Đến Đà Nẵng, nhận phòng, tắm biển Mỹ Khê, tối ăn hải sản và dạo cầu Rồng."
+        },
+        {
+          "day": 2,
+          "plan": "Đi bán đảo Sơn Trà, chùa Linh Ứng, chiều tham quan Ngũ Hành Sơn hoặc cafe ven biển."
+        },
+        {
+          "day": 3,
+          "plan": "Đi Bà Nà Hills hoặc đi Hội An trong ngày, tối quay lại Đà Nẵng nghỉ ngơi."
+        }
+      ],
+      "travel_tips": [
+        "Nếu đi Bà Nà Hills, nên kiểm tra thời tiết vì trên núi có thể sương mù hoặc mưa.",
+        "Nên đặt khách sạn tùy mục tiêu: gần biển để nghỉ dưỡng, gần sông Hàn để ăn uống và đi chơi đêm.",
+        "Đà Nẵng rất phù hợp làm điểm trung chuyển để đi Hội An và Huế."
+      ],
+      "rag_text": "Đà Nẵng là thành phố biển miền Trung, phù hợp với gia đình, nhóm bạn, người mới đi du lịch tự túc và người thích lịch trình dễ di chuyển. Thành phố có biển Mỹ Khê, bán đảo Sơn Trà, chùa Linh Ứng, Ngũ Hành Sơn, cầu Rồng, Bà Nà Hills và nhiều món ăn địa phương như mì Quảng, bún chả cá, bánh tráng cuốn thịt heo, hải sản. Đà Nẵng hợp với chuyến đi 3 đến 4 ngày, có thể kết hợp Hội An và Huế. Nếu người dùng muốn một điểm đến cân bằng giữa biển, thành phố, ăn uống, vui chơi và nghỉ dưỡng, Đà Nẵng là lựa chọn an toàn.",
+      "tags": ["đà nẵng", "da nang", "biển mỹ khê", "sơn trà", "bà nà hills", "cầu rồng", "mì quảng", "gia đình"],
+      "source_urls": ["https://vietnam.travel/places-to-go/central-vietnam/da-nang"]
+    },
+    {
+      "id": "vn_travel_008",
+      "name": "Đà Lạt",
+      "province_city": "Lâm Đồng",
+      "region": "Tây Nguyên",
+      "destination_type": ["cao nguyên", "nghỉ dưỡng", "chụp ảnh", "cafe", "khí hậu mát"],
+      "short_description": "Đà Lạt nổi tiếng với khí hậu mát, hồ, thác, rừng thông, quán cà phê đẹp, vườn hoa và các hoạt động ngoài trời.",
+      "overview": "Đà Lạt là điểm đến quen thuộc cho các chuyến đi ngắn từ TP.HCM hoặc các tỉnh phía Nam. Nơi này phù hợp với người thích thời tiết se lạnh, cà phê, chụp ảnh, nghỉ dưỡng, săn mây và trải nghiệm thiên nhiên. Ngoài các điểm trong thành phố như hồ Xuân Hương, quảng trường Lâm Viên, chợ Đà Lạt, du khách có thể đi Lang Biang, thung lũng, đồi chè, thác nước hoặc tour canyoning nếu thích vận động.",
+      "highlights": [
+        "Dạo hồ Xuân Hương, quảng trường Lâm Viên và chợ đêm Đà Lạt",
+        "Đi cafe view đẹp, săn mây hoặc ngắm bình minh",
+        "Tham quan Lang Biang, thung lũng Tình Yêu, đồi chè Cầu Đất",
+        "Trải nghiệm canyoning, trekking hoặc đạp xe nếu thích hoạt động ngoài trời",
+        "Ăn lẩu gà lá é, bánh căn, bánh tráng nướng, sữa đậu nành nóng"
+      ],
+      "suitable_for": ["cặp đôi", "nhóm bạn", "sinh viên", "người thích chụp ảnh", "người thích khí hậu mát"],
+      "suggested_duration_days": "3 ngày 2 đêm",
+      "best_time_to_visit": "Đà Lạt đi được quanh năm; mùa khô thường thuận tiện hơn cho săn mây và chụp ảnh ngoài trời, mùa mưa cần chuẩn bị áo mưa và lịch trình linh hoạt.",
+      "estimated_budget_vnd_per_person": {
+        "budget": "1.800.000 - 3.000.000",
+        "mid_range": "3.000.000 - 5.500.000",
+        "note": "Chi phí phụ thuộc vào xe giường nằm/vé máy bay, homestay, quán cafe, tour săn mây và phương tiện thuê tại Đà Lạt."
+      },
+      "transportation": "Từ TP.HCM có thể đi xe giường nằm/limousine hoặc bay đến sân bay Liên Khương rồi di chuyển vào trung tâm. Tại Đà Lạt có thể thuê xe máy, taxi hoặc xe công nghệ tùy khu vực.",
+      "food_suggestions": ["lẩu gà lá é", "bánh căn", "bánh tráng nướng", "sữa đậu nành", "kem bơ", "cà phê Đà Lạt"],
+      "sample_itinerary": [
+        {
+          "day": 1,
+          "plan": "Đến Đà Lạt, nhận phòng, dạo hồ Xuân Hương, quảng trường Lâm Viên, ăn lẩu gà lá é và đi chợ đêm."
+        },
+        {
+          "day": 2,
+          "plan": "Săn mây hoặc đi đồi chè Cầu Đất, chiều đi cafe view đẹp và tham quan các điểm chụp ảnh."
+        },
+        {
+          "day": 3,
+          "plan": "Mua đặc sản, ăn sáng với bánh căn hoặc bún bò, dạo thêm trung tâm rồi trở về."
+        }
+      ],
+      "travel_tips": [
+        "Cuối tuần và mùa lễ Đà Lạt thường đông, nên đặt phòng sớm.",
+        "Nên mang áo ấm nhẹ vì buổi tối và sáng sớm thường lạnh hơn ban ngày.",
+        "Các điểm săn mây phụ thuộc thời tiết, không phải lúc nào cũng có mây đẹp."
+      ],
+      "rag_text": "Đà Lạt ở Lâm Đồng là điểm đến cao nguyên có khí hậu mát, phù hợp với sinh viên, nhóm bạn, cặp đôi và người thích chụp ảnh. Điểm mạnh của Đà Lạt là quán cà phê view đẹp, rừng thông, hồ, thác, săn mây, đồi chè và nhiều món ăn vặt. Lịch trình phổ biến là 3 ngày 2 đêm từ TP.HCM bằng xe giường nằm hoặc máy bay. Nếu người dùng muốn đi nơi mát mẻ, ngân sách vừa phải, thích ăn uống, cafe, chụp hình và lịch trình chill, Đà Lạt là lựa chọn rất phù hợp. Nên đặt phòng sớm vào cuối tuần và chuẩn bị áo ấm.",
+      "tags": ["đà lạt", "da lat", "lâm đồng", "săn mây", "cafe", "chụp ảnh", "khí hậu mát", "sinh viên"],
+      "source_urls": ["https://vietnam.travel/places-to-go/central-vietnam/dalat"]
+    },
+    {
+      "id": "vn_travel_009",
+      "name": "Phú Quốc",
+      "province_city": "Kiên Giang",
+      "region": "Miền Nam",
+      "destination_type": ["biển đảo", "nghỉ dưỡng", "gia đình", "trăng mật"],
+      "short_description": "Phú Quốc là đảo du lịch nổi tiếng với biển, resort, hải sản, chợ đêm, làng nghề nước mắm, hồ tiêu và các khu vui chơi lớn.",
+      "overview": "Phú Quốc phù hợp với người muốn nghỉ dưỡng biển, đi cùng gia đình, cặp đôi hoặc nhóm bạn. Đảo có nhiều lựa chọn từ du lịch tiết kiệm đến resort cao cấp. Các trải nghiệm phổ biến gồm tắm biển, lặn ngắm san hô, đi tour đảo, tham quan nhà thùng nước mắm, vườn tiêu, chợ đêm, các bãi biển phía Nam và khu vui chơi ở phía Bắc đảo.",
+      "highlights": [
+        "Tắm biển ở Bãi Sao, Bãi Khem hoặc các bãi biển gần khu lưu trú",
+        "Đi tour 3 đảo hoặc 4 đảo, lặn ngắm san hô nếu thời tiết phù hợp",
+        "Tham quan chợ đêm Phú Quốc, nhà thùng nước mắm, vườn tiêu",
+        "Trải nghiệm cáp treo Hòn Thơm hoặc khu vui chơi ở Bắc đảo tùy ngân sách",
+        "Ăn hải sản, bún quậy, gỏi cá trích và các món địa phương"
+      ],
+      "suitable_for": ["gia đình", "cặp đôi", "người thích biển", "nghỉ dưỡng", "nhóm bạn"],
+      "suggested_duration_days": "3-4 ngày",
+      "best_time_to_visit": "Mùa khô khoảng tháng 11-4 thường thuận lợi cho du lịch biển; mùa mưa cần kiểm tra thời tiết và biển động trước khi đặt tour đảo.",
+      "estimated_budget_vnd_per_person": {
+        "budget": "3.500.000 - 5.500.000",
+        "mid_range": "5.500.000 - 10.000.000",
+        "note": "Chi phí phụ thuộc nhiều vào vé máy bay, resort, tour đảo và khu vui chơi."
+      },
+      "transportation": "Có thể bay đến sân bay Phú Quốc từ nhiều thành phố lớn. Trên đảo có thể đi taxi, thuê xe máy hoặc đặt xe theo tour. Một số khách sạn/resort có xe đưa đón sân bay.",
+      "food_suggestions": ["gỏi cá trích", "bún quậy", "hải sản", "nấm tràm", "nước mắm Phú Quốc"],
+      "sample_itinerary": [
+        {
+          "day": 1,
+          "plan": "Bay đến Phú Quốc, nhận phòng, tắm biển gần khách sạn, tối đi chợ đêm ăn hải sản."
+        },
+        {
+          "day": 2,
+          "plan": "Đi tour đảo hoặc lặn ngắm san hô, chiều nghỉ ngơi tại bãi biển hoặc resort."
+        },
+        {
+          "day": 3,
+          "plan": "Tham quan nhà thùng nước mắm, vườn tiêu, Bãi Sao hoặc khu vui chơi tùy sở thích, mua quà và trở về."
+        }
+      ],
+      "travel_tips": [
+        "Nên chọn khu lưu trú theo mục tiêu: Dương Đông tiện ăn uống, Nam đảo hợp biển đẹp, Bắc đảo hợp khu vui chơi.",
+        "Tour đảo phụ thuộc thời tiết, nên đặt lịch linh hoạt.",
+        "Chi phí Phú Quốc có thể cao hơn nhiều điểm trong đất liền, cần dự trù ngân sách."
+      ],
+      "rag_text": "Phú Quốc là điểm du lịch biển đảo ở Kiên Giang, phù hợp với người muốn nghỉ dưỡng, tắm biển, ăn hải sản và đi tour đảo. Trải nghiệm nổi bật gồm Bãi Sao, Bãi Khem, tour 3 đảo hoặc 4 đảo, lặn ngắm san hô, chợ đêm, nhà thùng nước mắm, vườn tiêu và các khu vui chơi. Phú Quốc hợp với lịch trình 3 đến 4 ngày, đặc biệt cho gia đình, cặp đôi hoặc nhóm bạn có ngân sách trung bình đến cao. Nếu người dùng muốn biển đẹp, resort, nghỉ dưỡng và không ngại chi phí vé máy bay, Phú Quốc là gợi ý phù hợp. Cần kiểm tra thời tiết và biển động trước khi đặt tour đảo.",
+      "tags": ["phú quốc", "phu quoc", "kiên giang", "biển đảo", "resort", "tour đảo", "hải sản", "gia đình"],
+      "source_urls": ["https://vietnam.travel/places-to-go/southern-vietnam/phu-quoc"]
+    },
+    {
+      "id": "vn_travel_010",
+      "name": "Cần Thơ",
+      "province_city": "Cần Thơ",
+      "region": "Miền Nam",
+      "destination_type": ["miền tây", "sông nước", "ẩm thực", "văn hóa địa phương"],
+      "short_description": "Cần Thơ là trung tâm du lịch miền Tây, nổi bật với chợ nổi Cái Răng, vườn trái cây, bến Ninh Kiều và văn hóa sông nước.",
+      "overview": "Cần Thơ phù hợp với người muốn trải nghiệm miền Tây sông nước, ăn uống địa phương và lịch trình ngắn từ TP.HCM. Điểm nổi bật là chợ nổi Cái Răng vào sáng sớm, bến Ninh Kiều, nhà cổ Bình Thủy, vườn trái cây, các khu du lịch sinh thái và ẩm thực miền Tây. Đây là lựa chọn phù hợp cho chuyến 2 ngày 1 đêm hoặc 3 ngày 2 đêm.",
+      "highlights": [
+        "Đi chợ nổi Cái Răng từ sáng sớm để xem hoạt động mua bán trên sông",
+        "Dạo bến Ninh Kiều, cầu đi bộ và chợ đêm",
+        "Tham quan nhà cổ Bình Thủy và các vườn trái cây",
+        "Trải nghiệm khu du lịch sinh thái, đi thuyền nhỏ qua kênh rạch",
+        "Ăn lẩu mắm, bánh xèo, cá lóc nướng trui, hủ tiếu, trái cây miền Tây"
+      ],
+      "suitable_for": ["gia đình", "nhóm bạn", "người thích ẩm thực", "người muốn đi ngắn ngày từ TP.HCM"],
+      "suggested_duration_days": "2-3 ngày",
+      "best_time_to_visit": "Cần Thơ có khí hậu nhiệt đới; mùa khô thường thuận tiện hơn cho di chuyển, mùa trái cây và mùa nước nổi có trải nghiệm riêng nhưng cần xem thời tiết.",
+      "estimated_budget_vnd_per_person": {
+        "budget": "1.200.000 - 2.500.000",
+        "mid_range": "2.500.000 - 4.000.000",
+        "note": "Chi phí tương đối dễ chịu nếu đi xe từ TP.HCM và ở khách sạn trung tâm."
+      },
+      "transportation": "Từ TP.HCM có thể đi xe khách hoặc ô tô cá nhân đến Cần Thơ. Trong thành phố có thể đi taxi, xe máy, xe công nghệ và thuê thuyền đi chợ nổi hoặc kênh rạch.",
+      "food_suggestions": ["lẩu mắm", "bánh xèo miền Tây", "cá lóc nướng trui", "hủ tiếu", "nem nướng", "trái cây miệt vườn"],
+      "sample_itinerary": [
+        {
+          "day": 1,
+          "plan": "Từ TP.HCM đi Cần Thơ, nhận phòng, tham quan nhà cổ Bình Thủy hoặc vườn trái cây, tối dạo bến Ninh Kiều và chợ đêm."
+        },
+        {
+          "day": 2,
+          "plan": "Dậy sớm đi chợ nổi Cái Răng, ăn sáng trên thuyền, ghé khu du lịch sinh thái, trưa ăn lẩu mắm rồi quay về TP.HCM."
+        }
+      ],
+      "travel_tips": [
+        "Chợ nổi nên đi rất sớm, thường trước khi trời nắng mạnh.",
+        "Nên hỏi rõ giá thuê thuyền và lịch trình trước khi đi.",
+        "Nếu thích trải nghiệm miền Tây chậm rãi, nên ở thêm một đêm để đi vườn trái cây hoặc các tỉnh lân cận."
+      ],
+      "rag_text": "Cần Thơ là điểm đến miền Tây nổi bật với sông nước, chợ nổi Cái Răng, bến Ninh Kiều, nhà cổ Bình Thủy, vườn trái cây và ẩm thực địa phương. Đây là lựa chọn phù hợp cho người xuất phát từ TP.HCM, muốn đi ngắn ngày, ngân sách vừa phải, thích ăn uống và trải nghiệm văn hóa miền Tây. Lịch trình phổ biến là 2 ngày 1 đêm: ngày đầu tham quan trung tâm, bến Ninh Kiều, nhà cổ hoặc vườn trái cây; sáng ngày hai đi chợ nổi Cái Răng và ăn sáng trên thuyền. Nếu người dùng muốn đi gần TP.HCM, thích sông nước, đồ ăn miền Tây và không cần lịch trình quá nặng, Cần Thơ là gợi ý phù hợp.",
+      "tags": ["cần thơ", "can tho", "miền tây", "chợ nổi cái răng", "bến ninh kiều", "sông nước", "ẩm thực", "gần tphcm"],
+      "source_urls": ["https://vietnam.travel/places-to-go/southern-vietnam/can-tho"]
+    }
+  ]
+}
