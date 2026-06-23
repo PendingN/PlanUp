@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Agent configuration
+.agents/
+AGENTS.md
+task.md
+prompt_draft.md
+walkthrough.md
+implementation_plan.md
+
+# OS files
+.DS_Store
+Thumbs.db
