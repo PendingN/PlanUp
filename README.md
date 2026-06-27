@@ -37,9 +37,45 @@
 - Xuất và chia sẻ kế hoạch với bạn bè
 
 
-  ## Kiến trúc
-  ## Yêu cầu môi trường
-  ## Cách cài đặt
-  ## Cách chạy frontend
-  ## Cách chạy backend
-  ## Biến môi trường
+## Kiến trúc (Sơ đồ Kiến trúc Hệ thống)
+
+```mermaid
+sequenceDiagram
+    actor U as Khách Hàng
+    participant UI as 📱 Giao diện (App)
+    participant O as ⚙️ Bộ Điều Phối (LangChain)
+    participant LLM as 🧠 Não Bộ AI (LLM)
+    participant R as 📚 Dữ Liệu Tĩnh (RAG)
+    participant A as 🌐 Dữ Liệu Sống (APIs)
+
+    U->>UI: Hỏi: "Lên lịch Đà Lạt & Tìm KS"
+    UI->>O: Chuyển yêu cầu
+    
+    O->>LLM: Phân tích ý định?
+    LLM-->>O: Cần làm: Lên lịch + Tìm KS
+    
+    O->>R: Truy vấn Cẩm nang Đà Lạt
+    R-->>O: Kết quả: Hồ Tuyền Lâm, Langbiang...
+    
+    O->>A: Tìm KS Đà Lạt (Real-time)
+    A-->>O: Kết quả: KS Colline (1tr/đêm)
+    
+    O->>LLM: Gộp Dữ liệu + Sinh câu trả lời
+    LLM-->>O: Viết văn bản hoàn chỉnh
+    
+    O-->>UI: Câu trả lời + Hình ảnh KS
+    UI-->>U: Hiển thị kết quả!
+```
+
+### Chú thích các cụm từ:
+
+- **Bộ Điều Phối (LangChain):** Người quản lý phân chia công việc.
+- **Não Bộ AI (LLM):** Người suy nghĩ, phân tích ngôn ngữ và viết câu chữ.
+- **Dữ Liệu Tĩnh (RAG):** Kho tài liệu công ty (Không thay đổi thường xuyên như chính sách, FAQ, cẩm nang).
+- **Dữ Liệu Sống (APIs):** Các cổng kết nối với bên thứ 3 (Amadeus, Google) để lấy giá cả, thời tiết cập nhật theo từng giây. Dữ liệu này phải luôn được cập nhật.
+
+## Yêu cầu môi trường
+## Cách cài đặt
+## Cách chạy frontend
+## Cách chạy backend
+## Biến môi trường
